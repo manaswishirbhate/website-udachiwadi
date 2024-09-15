@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;              /* Enables flexbox */
+    align-items: center;        /* Vertically aligns the items */
+    justify-content: space-between; /* Adjusts space between the columns */
+    padding: 20px;
+    gap: 20px;                  /* Adds space between image and text */
+  }
+  
+  .image-column {
+    flex: 1;                    /* Image takes 1 part of the space */
+  }
+  
+  .image-column img {
+    max-width: 100%;            /* Ensures image is responsive */
+    height: auto; 
+    border-radius: 10px;            /* Maintains aspect ratio */
+  }
+  
+  .text-column {
+    flex: 2;                    /* Text takes 2 parts of the space */
+    padding-left: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .containerR {
+    display: flex;              /* Enables flexbox */
+    align-items: center;        /* Vertically aligns the items */
+    justify-content: space-between; /* Adjusts space between the columns */
+    padding: 20px;
+    gap: 20px;                  /* Adds space between image and text */
+  }
+  
+  .image-columnR {
+    flex: 1;                    /* Image takes 1 part of the space */
+  }
+  
+  .image-columnR img {
+    max-width: 200px;            /* Ensures image is responsive */
+    height: 200px;               /* Maintains aspect ratio */
+  }
+  
+  .text-columnR {
+    flex: 2;                    /* Text takes 2 parts of the space */
+    padding-left: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p1 {
+    line-height: 1.6;
+  }
