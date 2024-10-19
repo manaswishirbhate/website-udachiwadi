@@ -7,10 +7,58 @@
     <link rel="stylesheet" type="text/css" href="JS.css">
 </head>
 <body>
-    <header>
-        <div class=" nav-logo">
-            <div class="logo"></div>
-        </div>
-    </header>
+       
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+       <div class=" nav-logo">
+            <div class="logo1"></div>
+       </div>
+
+            <div class="video-container">
+                <video autoplay muted loop plays-inline id="background-video">
+                  <source src="videoplayback.webm" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <h1>Empowering Villages & Creating Prosperous Rural Communities</h1>
+                </div>
+            </div>
+
+            <div class="container">
+              <!-- Information Section -->
+              <div class="info">
+                  <div>
+                      <h1>Mission</h1>
+                      <p>A Drought-Free and Prosperous Maharashtra</p>
+                      <br>
+                      <p> For decades, drought has ravaged thousands of villages in Maharashtra,
+                        leading to thirst, hunger, debt, forced migration and withered crops. After
+                        travelling through hundreds of villages, and speaking with veterans in the
+                        field, we discovered that this crisis is largely man-made. It is a result of
+                        mismanagement of water and natural resources, exacerbated by the
+                        uncertainties caused by climate change.
+                        The scientific solutions to eradicating this crisis can be found in methods of
+                        water conservation, water management and environment restoration. These
+                        are well-known solutions, propagated by experts for years.
+                        However, the primary barrier to implementing these on scale lies in deep-
+                        rooted social fractures. Divides of caste, religion, political affiliations and
+                        gender have prevented communities from owning this issue and finding
+                        purpose in solving it together.
+                      </p>
+                  </div>
+              </div>
+      
+              <!-- Image Upload/Display Section -->
+              <div class="image-container">
+                  <img id="uploadedImage" src="IMG-20240813-WA0002.jpg" alt="Uploaded Image">
+              </div>
+            </div>
 </body>
 </html>

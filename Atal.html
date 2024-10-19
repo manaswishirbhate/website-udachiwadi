@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="atal.css">
+</head>
+<body>
+    
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+<div class="background-image">
+    <div class="overlay-text">
+        <h1>Your Text Here</h1>
+        
+    </div>
+</div>
+
+<div class="container">
+    <!-- Information Section -->
+    <div class="info">
+        <div>
+            <h1>vision</h1>
+            <p>info</p>
+        </div>
+    </div>
+
+    <!-- Image Upload/Display Section -->
+    <div class="image-container">
+        <img id="uploadedImage" src="IMG-20240906-WA0032.jpg" alt="Uploaded Image">
+    </div>
+</div>
+
+
+</body>
+</html>
