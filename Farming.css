@@ -63,3 +63,17 @@ h1 {
     height: auto; /* Responsive image */
     border-radius: 10px; /* Rounded corners */
 }
+
+.container { width: 80%; max-width: 800px; 
+    font-size: medium; 
+
+}
+
+/* Tab styling */
+.tabs { display: flex; justify-content: space-around; padding: 10px; border-bottom: 2px solid #ddd; background-color: #f1f1f1; }
+.tab { padding: 10px; font-weight: bold; color: #555; 
+text-align: center;}
+.tab a { color: blue; text-decoration: none;
+        font-size:larger;
+        text-align:center;
+}

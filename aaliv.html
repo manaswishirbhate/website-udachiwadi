@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aaliv.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+<div class="container">
+    <!-- Information Section -->
+    <div class="info">
+        <div>
+            <h2></h2>
+            <p>Aaliv (Lepidium sativum) is typically ready for
+                harvest about 2 to 3 weeks after planting. You can start harvesting
+                the leaves once they reach around 4 to 6 inches in height. For the
+                best flavor, it's best to harvest them before they start to flower.
+                Simply snip the leaves off just above the soil line, and they can
+                continue to grow for a second harvest if conditions are right.
+            </p>
+        </div>
+    </div>
+
+    <!-- Image Upload/Display Section -->
+    <div class="image-container">
+        <img id="uploadedImage" src="IMG-20240906-WA0032.jpg" alt="Uploaded Image">
+    </div>
+</div>
+
+<div class="container1">
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Planting</li>
+        </ul>
+        <p>Aaliv seeds grow best when they are sown directly into the
+            garden., and the crop matures in 30-40 days.
+           In Udachiwadi, Aaliv is grown during both the Kharif and Rabi
+            seasons.</p>
+    </div>
+
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Irrigation</li>
+        </ul>
+        <p>Aaliv requires minimal water, and in many cases, farmers
+            in Udachiwadi rely solely on rain-fed irrigation or minimal water
+            from farm ponds.</p>
+    </div>
+
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Challenges</li>
+        </ul>
+        <p>The short growing cycle of Aaliv means that farmers
+            need to be cautious of sudden weather changes, which can affect the
+            crop yield.</p>
+    </div>
+</div>
+
+<div class="flip-container">
+    <!-- First flip box -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2 text-primary>Economic Impact</h2>
+            </div>
+            <div class="flip-box-back">
+                <p>Garden cress is considered a nutritious food,
+                    which can help farmers sell it at higher prices in healthfocused
+                    markets.It grows fast—usually ready to eat in just 2-3 weeks.
+                    This means farmers can harvest multiple times in one season,
+                    boosting their income.</p>
+            </div>
+        </div>
+        <p class="box-title"></p>
+    </div>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2>Pest and Disease Control</h2>
+            </div>
+            <div class="flip-box-back">
+                <p>Common pests like aphids and diseases such as downy mildew can affect crops. Integrated pest management strategies are important for control.</p>
+            </div>
+        </div>
+        <p class="box-title"></p>
+    </div>
+</div>
+  
+<footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; </p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

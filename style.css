@@ -4,6 +4,40 @@
     box-sizing: border-box;
 }
 
+/* Custom navbar background color */
+.navbar {
+    background-color: #e7ebee; /* Change this color to any color you prefer */
+    /* Change this color to any color you prefer */
+    position: sticky;
+   
+}
+
+/* Custom navbar text color */
+.navbar .nav-link {
+    color: #fff; /* Set text color to white */
+}
+
+/* Change the color of the active nav-link */
+.navbar .nav-link.active {
+    color: #ffdd57; /* Change this color for active links */
+}
+
+/* Dropdown menu background color */
+.navbar .dropdown-menu {
+    background-color: #2a9df4; /* Change the color of the dropdown */
+}
+
+/* Dropdown item text color */
+.navbar .dropdown-item {
+    color: #fff; /* Change this color for dropdown links */
+}
+
+/* Dropdown item hover effect */
+.navbar .dropdown-item:hover {
+    background-color: #1c7fbf; /* Change this color for hover effect */
+}
+
+
 .carousel-inner img{
     width: 100%;
     height: 80vh;
@@ -107,6 +141,10 @@ h2 {
     overflow: hidden;
 }
 
+.ppt-container{
+    transition-duration: 2sec;
+}
+
 .ppt-container {
     width: 80%;
     height: 80%;
@@ -129,4 +167,47 @@ iframe {
     margin-left: 1cm;
 }
 
-
+footer {
+    background-color: #768594;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }

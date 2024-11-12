@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sitaphal.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+<div class="container">
+    <!-- Information Section -->
+    <div class="info">
+        <div>
+            <h2></h2>
+            <p>Sitaphal thrive in hot and dry climates .This
+                makes them ideal for places like udachiwadi ,where the weather is
+                warm and there are long period without rain. These trees can tolerate
+                drought , meaning they can grow well even when water is scares.
+                Sitaphal prefer sandy loam soil. This type of
+                soil drains well, which is important for the roots of the trees. Good
+                drainage helps prevent water from pooling around the roots, which
+                can cause problems.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Image Upload/Display Section -->
+    <div class="image-container">
+        <img id="uploadedImage" src="IMG-20240906-WA0032.jpg" alt="Uploaded Image">
+    </div>
+</div>
+
+<div class="container1">
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Planting</li>
+        </ul>
+        <p>Farmers in udachiwadi mainly use seeds to grow custard
+            apples. This method is cost-effective, making it suitable for small
+            farms. Grafting is another method, but it is less common among
+            local farmers.</p>
+    </div>
+
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Irrigation</li>
+        </ul>
+        <p>While custards apple trees can survive with little waters,
+            they need some irrigation when they are young. Farmers in
+            Udachiwadi water the plants carefully during their early growth.
+            once the trees are established, they need less water. Many farmers
+            use drip irrigation systems to water the trees efficiently during
+            important growth stages.</p>
+    </div>
+
+    <div class="item">
+        <ul>
+            <li class="bold-title text-primary">Challenges</li>
+        </ul>
+        <p>Sitaphal can face problems from pests like fruit borers
+            and diseases such as powdery mildew. Farmers manage these
+            challenges using organic methods, like natural pestsides , to keep the
+            crops healthy without relying on harmful chemicals.</p>
+    </div>
+</div>
+
+<div class="flip-container">
+    <!-- First flip box -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2 text-primary>Economic Impact</h2>
+            </div>
+            <div class="flip-box-back">
+                <p>Demand and income custard apples are very
+                    popular because of their sweet taste and health benefits. In
+                    Udachiwadi , the production of Sitaphal helps increase local farmers
+                    income during the harvest season when they can sell their fruit for
+                    good prices.</p>
+            </div>
+        </div>
+        <p class="box-title"></p>
+    </div>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2>Market Access</h2>
+            </div>
+            <div class="flip-box-back">
+                <p>Farmers in Udachiwadi have improved their access
+                    to markets by connecting with near by towns .This allows them to
+                    sell their Sitaphal more easily and at better prices , which boosts
+                    their overall income and supports the local economy.</p>
+            </div>
+        </div>
+        <p class="box-title"></p>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; </p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

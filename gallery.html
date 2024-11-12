@@ -9,18 +9,29 @@
     <script src="path/to/lightbox.js"></script>
 </head>
 <body>
+     
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
     <h1> Images</h1>
     <div class="gallery">
-        <a href="image9.jpg" data lightbox="image9.jpg"><img src="image9.jpg"></a>
-        <a href="iamge2.jpg" data lightbox="iamge2.jpg"><img src="iamge2.jpg"></a>
-        <a href="image3.jpeg" data lightbox="image3.jpeg"><img src="image3.jpeg"></a>
-        <a href="iage4.jpeg" data lightbox="iage4.jpeg"><img src="iage4.jpeg"></a>
-        <a href="image5.jpeg" data lightbox="image5.jpeg"><img src="image5.jpeg"></a>
-        <a href="image6.jpeg" data lightbox="image6.jpeg"><img src="image6.jpeg"></a>
-        <a href="image7.jpeg" data lightbox="image7.jpeg"><img src="image7.jpeg"></a>
-        <a href="image8.jpg" data lightbox="image8.jpg"><img src="image8.jpg"></a>
-        <a href="image1.jpg" data lightbox="image1.jpg"><img src="image1.jpg"></a>
+        <a href="1000296920.jpg" data lightbox="1000296920.jpg"><img src="1000296920.jpg"></a>
+        <a href="1000296919.jpg" data lightbox="1000296919.jpg"><img src="1000296920.jpg"></a>
+        <a href="1000296918.jpg" data lightbox="1000296918.jpg"><img src="1000296918.jpg"></a>
+        <a href="1000296917.jpg" data lightbox="1000296917.jpg"><img src="1000296917.jpg"></a>
+        <a href="1000296916.jpg" data lightbox="1000296916.jpg"><img src="1000296916.jpg"></a>
+        <a href="1000296915.jpg" data lightbox="1000296915.jpg"><img src="1000296915.jpg"></a>
+        <a href="1000296914.jpg" data lightbox="1000296914.jpg"><img src="1000296914.jpg"></a>
         <a href="" data lightbox=""><img src=""></a>
+        <a href="" data lightbox=""><img src=""></a>
+        
     </div>
     
 </body>
