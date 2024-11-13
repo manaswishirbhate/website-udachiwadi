@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="JS.css">
+</head>
+<body>
+       
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+       <div class=" nav-logo">
+            <div class="logo1"></div>
+       </div>
+
+            <div class="video-container">
+                <video autoplay muted loop plays-inline id="background-video">
+                  <source src="paani video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <h1>Empowering Villages & Creating Prosperous Rural Communities</h1>
+                </div>
+            </div>
+
+            <div class="container">
+              <!-- Information Section -->
+              <div class="info">
+                  <div>
+                      <h1>Mission</h1>
+                      <p>A Drought-Free and Prosperous Maharashtra</p>
+                      <br>
+                      <p> For decades, drought has ravaged thousands of villages in Maharashtra,
+                        leading to thirst, hunger, debt, forced migration and withered crops. After
+                        travelling through hundreds of villages, and speaking with veterans in the
+                        field, we discovered that this crisis is largely man-made. It is a result of
+                        mismanagement of water and natural resources, exacerbated by the
+                        uncertainties caused by climate change.
+                        The scientific solutions to eradicating this crisis can be found in methods of
+                        water conservation, water management and environment restoration. These
+                        are well-known solutions, propagated by experts for years.
+                      </p>
+                  </div>
+              </div>
+      
+              <!-- Image Upload/Display Section -->
+              <div class="image-container">
+                  <img id="uploadedImage" src="paani foun1.jpg" alt="Uploaded Image">
+              </div>
+            </div>
+
+            <div class="container1">
+              <ul class="info1">
+                <li><span class=para1>Continuous Contour Trenches : The Paani Foundation has built
+                  continuous contour trenches (CCTs) as part of the Satyamev Jayate Water
+                  Cup initiative. These trenches help reduce soil erosion and conserve
+                  water in semi-arid regions, promoting sustainable agriculture and
+                  community resilience</span></li>
+                  <br>
+                <li><span class="para1">The Paani Foundation has created percolation tanks and farm ponds that
+                  improve groundwater recharge and provide essential water resources for
+                  farming.</span></li>
+                  <br>
+                <li><span class="para1">The Paani Foundation has actively engaged in tree plantation efforts in
+                  Udachiwadi, enhancing biodiversity and supporting environmental
+                  sustainability in the region.</span></li>
+               
+              </ul>
+              <div class="image1">
+                <img src="paanifound3.jpg" alt="Image description">
+              </div>
+            </div>
+
+           
+</body>
+</html>
