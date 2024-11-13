@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bharat.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+<div class="container">
+    
+    <div class="info">
+        <div>
+            <h1>Bharat Forge</h1>
+            <p>Bharat Forge is providing free soil and silt to farmers in Udachiwadi
+                as part of its ongoing water conservation efforts in the village.
+                As part of the 2024-25 Rural Development Scheme, Bharat Forge Ltd., Pune, provided essential
+                financial and technical support to launch a community-focused agricultural initiative. This program
+                included a mango tree distribution and plantation ceremony aimed at enhancing both the local
+                environment and supporting sustainable agricultural practices. The event was held on Saturday, 3rd
+                August 2024, at 9:00 AM at the Gram Panchayat Office in Udachiwadi.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="image-container1">
+        <img id="uploadedImage" src="bharatforgeimg.jpg" alt="Uploaded Image">
+    </div>
+</div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

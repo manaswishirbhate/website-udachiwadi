@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="anjir.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Load the navbar from navbar.html
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+    <div class="INFOSEC">
+        
+        <div class="info">
+            <div>
+                <h2></h2>
+                <p>Anjir trees prefer a warm and dry climate
+                    with temperatures between 15 degree C & 40 degree C.They can
+                    tolerate temperature as high as 45 degree C , but the quality of fruit
+                    deteriorates above 39 degree C.Anjir trees are sentestive to first and
+                    can be damaged by freezing Temperatures.
+                    Well-draining soil rich in organic matter is essential for anjir
+                    trees.Consider enriching soil with well-rotted manure or compost to
+                    provide the necessary nutrients for healthy growth. Alternatively,a
+                    high-quality organic potting mixed is used in Udachwadi’s farming.
+                </p>
+            </div>
+
+            <div class="image-container">
+                <img id="uploadedImage" src="paani panchayat img1.png" alt="Uploaded Image">
+            </div>
+        </div>
+    </div>   
+
+        <div class="container1">
+            <div class="item">
+                <ul>
+                    <li class="bold-title text-primary">Planting</li>
+                </ul>
+                <p>Anjir is typically propagated through cuttings. In Udachiwadi, farmers have adopted organic practices for fig
+                    cultivation, including the use of organic fertilizers and natural pest
+                    control methods.</p>
+            </div>
+        
+            <div class="item">
+                <ul>
+                    <li class="bold-title text-primary">Irrigation</li>
+                </ul>
+                <p>Given the semi-arid conditions, drip irrigation systems have been implemented to optimize water usage for fig cultivation. The use of farm ponds and rainwater harvesting systems ensures the availability of water
+                    throughout the year.</p>
+            </div>
+        
+            <div class="item">
+                <ul>
+                    <li class="bold-title text-primary">Challenges</li>
+                </ul>
+                <p>The main challenges in fig farming include pest
+                    infestations, such as fig borer, and the need for careful pruning to
+                    maintain the health of the trees.</p>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 text-primary>Economic Impact</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p>The cultivation of figs has increased the income of many farmers in
+                            Udachiwadi.With proper market linkages, farmers have been able
+                            to sell figs at premium prices in urban markets, both fresh and
+                            dried.</p>
+                    </div>
+                </div>
+                <p class="box-title"></p>
+            </div>
+        
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Income Increase</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p>Farmers report a significant increase in income from fig farming,
+                            with higher yields due to the use of organic fertilizers and drip
+                            irrigation systems.</p>
+                    </div>
+                </div>
+                <p class="box-title"></p>
+            </div>
+        </div>
+
+
+</body>
+</html>
