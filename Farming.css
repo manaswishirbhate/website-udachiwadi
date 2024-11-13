@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url('IMG-20240813-WA0002.jpg'); 
+    background-size: cover;  
+    background-position: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info {
+    flex: 1; /* Take up 50% of the space */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light background for the info */
+}
+
+.info p {
+    font-size: 18px;
+    color: #333;
+}
+
+.image-container {
+    flex: 1; /* Take up 50% of the space */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.container { width: 80%; max-width: 800px; 
+    font-size: medium; 
+
+}
+
+/* Tab styling */
+.tabs { display: flex; justify-content: space-around; padding: 10px; border-bottom: 2px solid #ddd; background-color: #f1f1f1; }
+.tab { padding: 10px; font-weight: bold; color: #555; 
+text-align: center;}
+.tab a { color: blue; text-decoration: none;
+        font-size:larger;
+        text-align:center;
+}

@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.background-image {
+    background-image: url('paani panchayat img1.png'); 
+    background-size: cover;  
+    background-position: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.text{
+    text-emphasis-color:blue;
+}
+
+.bg-text{
+    background-color:white;
+    margin-top: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 1cm;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.info {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #caf0f8;
+    
+}
+
+.info p {
+    font-size: 18px;
+    color: #333;
+}
+
+.image-container {
+    flex: 1; /* Take up 50% of the space */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+ .bg-text{
+  margin-top: 1cm;
+  margin-bottom: 5%;
+ }
